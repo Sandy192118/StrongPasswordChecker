@@ -1,0 +1,613 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #f4f7fb;
+color: #222;
+}
+
+/* ==================== */
+/* SCREEN CONTROL */
+/* ==================== */
+
+.screen {
+display: none;
+min-height: 100vh;
+}
+
+.screen.active {
+display: flex;
+}
+
+/* ==================== */
+/* SCREEN 1 */
+/* ==================== */
+
+#welcomeScreen {
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.welcome-container {
+background: white;
+width: 90%;
+max-width: 500px;
+
+```
+padding: 50px 40px;
+
+border-radius: 20px;
+
+box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1);
+```
+
+}
+
+.logo {
+font-size: 70px;
+margin-bottom: 20px;
+}
+
+.welcome-container h1 {
+font-size: 40px;
+margin-bottom: 20px;
+}
+
+.welcome-container p {
+font-size: 18px;
+line-height: 1.6;
+
+```
+color: #666;
+
+margin-bottom: 30px;
+```
+
+}
+
+/* ==================== */
+/* COMMON BUTTON */
+/* ==================== */
+
+button {
+border: none;
+
+```
+padding: 14px 30px;
+
+border-radius: 10px;
+
+font-size: 16px;
+
+cursor: pointer;
+
+background: #2563eb;
+
+color: white;
+```
+
+}
+
+button:hover {
+opacity: 0.85;
+}
+
+/* ==================== */
+/* SCREEN 2 */
+/* ==================== */
+
+#checkerScreen {
+justify-content: center;
+align-items: center;
+
+```
+padding: 30px;
+```
+
+}
+
+.checker-container {
+background: white;
+
+```
+width: 90%;
+max-width: 600px;
+
+padding: 40px;
+
+border-radius: 20px;
+
+box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1);
+```
+
+}
+
+.checker-container h2 {
+text-align: center;
+
+```
+font-size: 32px;
+
+margin-bottom: 10px;
+```
+
+}
+
+.subtitle {
+text-align: center;
+
+```
+color: #666;
+
+margin-bottom: 30px;
+```
+
+}
+
+/* ==================== */
+/* PASSWORD BOX */
+/* ==================== */
+
+.password-box {
+display: flex;
+
+```
+border: 2px solid #ddd;
+
+border-radius: 10px;
+
+overflow: hidden;
+
+margin-bottom: 20px;
+```
+
+}
+
+.password-box input {
+flex: 1;
+
+```
+border: none;
+
+outline: none;
+
+padding: 15px;
+
+font-size: 16px;
+```
+
+}
+
+.eye-button {
+background: white;
+
+```
+color: #333;
+
+padding: 10px 15px;
+
+border-radius: 0;
+```
+
+}
+
+/* ==================== */
+/* PRIVACY */
+/* ==================== */
+
+.privacy-message {
+font-size: 13px;
+
+```
+color: #666;
+
+text-align: center;
+
+margin-bottom: 25px;
+```
+
+}
+
+/* ==================== */
+/* STRENGTH */
+/* ==================== */
+
+.strength-section {
+margin-bottom: 30px;
+}
+
+.strength-header {
+display: flex;
+
+```
+justify-content: space-between;
+
+margin-bottom: 10px;
+
+font-weight: bold;
+```
+
+}
+
+.strength-bar {
+width: 100%;
+
+```
+height: 12px;
+
+background: #e5e7eb;
+
+border-radius: 10px;
+
+overflow: hidden;
+```
+
+}
+
+#strengthFill {
+width: 0%;
+
+```
+height: 100%;
+
+background: #2563eb;
+
+transition: 0.3s;
+```
+
+}
+
+/* ==================== */
+/* REQUIREMENTS */
+/* ==================== */
+
+.requirements {
+margin-bottom: 30px;
+}
+
+.requirements h3 {
+margin-bottom: 15px;
+}
+
+.requirements p {
+margin: 10px 0;
+
+```
+font-size: 15px;
+```
+
+}
+
+/* ==================== */
+/* SECONDARY BUTTON */
+/* ==================== */
+
+.secondary-button {
+background: #64748b;
+
+```
+margin-left: 10px;
+```
+
+}
+/* ==================== */
+/* SCREEN 3 */
+/* ==================== */
+
+#analysisScreen {
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.analysis-container {
+    background: white;
+
+    width: 90%;
+    max-width: 600px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.analysis-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.result-icon {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+
+#resultStrength {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+#resultMessage {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* Score */
+
+.score-section {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+
+.score-header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    font-weight: bold;
+}
+
+
+.score-bar {
+    width: 100%;
+    height: 15px;
+
+    background: #e5e7eb;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+#scoreFill {
+    width: 100%;
+    height: 100%;
+
+    background: #2563eb;
+
+    transition: 0.3s;
+}
+
+
+/* Requirements */
+
+.result-requirements {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+
+.result-requirements h3 {
+    margin-bottom: 15px;
+}
+
+
+.result-requirements p {
+    margin: 10px 0;
+}
+
+
+/* Buttons */
+
+.analysis-container button {
+    margin: 5px;
+}
+/* ==================== */
+/* SCREEN 4 */
+/* ==================== */
+
+#tipsScreen {
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+.tips-container {
+    background: white;
+
+    width: 90%;
+    max-width: 700px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.tips-container h2 {
+    text-align: center;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+
+.tips-subtitle {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* Tip cards */
+
+.tip-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    margin-bottom: 15px;
+
+    background: #f8fafc;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e7eb;
+}
+
+
+.tip-icon {
+    font-size: 30px;
+
+    min-width: 40px;
+}
+
+
+.tip-card h3 {
+    margin-bottom: 5px;
+
+    font-size: 18px;
+}
+
+
+.tip-card p {
+    color: #666;
+
+    line-height: 1.5;
+}
+
+
+/* Screen 4 buttons */
+
+.tips-container button {
+    margin-top: 10px;
+
+    margin-right: 8px;
+}
+/* ==================== */
+/* SCREEN 5 */
+/* ==================== */
+
+#historyScreen {
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+.history-container {
+    background: white;
+
+    width: 90%;
+    max-width: 650px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.history-container h2 {
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.history-subtitle {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* History item */
+
+.history-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px;
+
+    margin-bottom: 12px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+}
+
+
+.history-password {
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.history-strength {
+    font-weight: bold;
+}
+
+
+.history-date {
+    font-size: 12px;
+
+    color: #777;
+
+    margin-top: 5px;
+}
+
+
+/* No history */
+
+#noHistory {
+    text-align: center;
+
+    color: #777;
+
+    margin: 30px 0;
+}
+
+
+/* Buttons */
+
+.history-container button {
+    margin-top: 10px;
+
+    margin-right: 8px;
+}
