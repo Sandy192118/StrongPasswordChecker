@@ -30,6 +30,33 @@ function showScreen(screenId) {
 
     }
 }
+/* ==================== */
+/* SHOW / HIDE PASSWORD */
+/* ==================== */
+
+function togglePassword() {
+
+    const passwordInput =
+        document.getElementById("passwordInput");
+
+    const toggleButton =
+        document.getElementById("toggleButton");
+
+
+    if (passwordInput.type === "password") {
+
+        passwordInput.type = "text";
+
+        toggleButton.textContent = "🙈";
+
+    } else {
+
+        passwordInput.type = "password";
+
+        toggleButton.textContent = "👁️";
+
+    }
+}
 
 /* ==================== */
 /* PASSWORD CHECKING */
